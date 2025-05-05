@@ -1,0 +1,259 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Our Css */
+nav {
+    display: flex;
+    /* Push the content to the left and right */
+    /* What are the options */
+    justify-content: space-between;
+    /* Align virtically */
+    align-items: center;
+    background-color: darkslategray;
+    padding: 15px;
+}
+
+.logo {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 1px 50px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+header {
+    /* background-color: aqua; */
+    background-image: url(cat1.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding: 300px;
+}
+
+header h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header p {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.cta-btn {
+    background-color: blue;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    font-size: 16px;
+
+    /* Change the cursor to pointer */
+    cursor: pointer;
+}
+
+.cta-btn:hover {
+    background-color: darkblue;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#about {
+    background-color: #eee;
+    padding: 20px 30px;
+}
+
+#about img {
+    width: 750px;
+}
+
+#services {
+    background-image: url(cat2.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding: 300px;
+    color: #fff;
+    font-size: 20px;
+}
+
+#services * {
+    font-size: inherit;
+}
+
+.our-services {
+    text-align: center;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.services-box {
+    background-color: rgba(238, 238, 238, 0.75);
+    text-align: center;
+    gap: 20px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    padding: 15px;
+}
+
+.services-box * {
+    font-size: inherit;
+}
+
+footer {
+    background-color: darkslategray;
+    text-align: center;
+    color: white;
+    padding: 10px 20px;
+}
