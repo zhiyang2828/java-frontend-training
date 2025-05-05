@@ -1,0 +1,92 @@
+body {
+    background-color: #e0f7fa;
+    /* Light mint green */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Modern, readable font */
+    line-height: 1.6;
+    /* Improved readability */
+    margin: 0;
+    /* Reset default margins */
+    padding: 0;
+    /* Reset default padding */
+}
+
+.container {
+    /* Optional: For better content centering and max-width */
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9fbe7;
+    /* Very light yellow/off-white for contrast */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+}
+
+h1 {
+    color: #2e7d32;
+    /* Darker shade of green */
+    font-size: 3.5rem;
+    /* Responsive font size */
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+    /* Slight letter spacing for elegance */
+}
+
+h2 {
+    color: #64dd17;
+    /* Brighter mint green */
+    font-size: 1.8rem;
+    text-decoration: none;
+    /* Removed underline for a cleaner look */
+    font-weight: 600;
+    /* Semi-bold for emphasis */
+    font-family: "Coral Pixels", serif;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #a5d6a7;
+    /* Subtle bottom border instead of underline */
+    padding-bottom: 5px;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    color: #333;
+    /* Dark gray for better readability */
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #00897b;
+    /* Teal/dark cyan */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    /* Smooth hover transition */
+}
+
+a:hover {
+    color: #00c6ae;
+    /* Lighter teal on hover */
+    text-decoration: none;
+    /* Keeping no underline for modern feel */
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #a5d6a7;
+    /* Muted mint green */
+    color: #fff;
+    /* White text for contrast */
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle top shadow */
+}
