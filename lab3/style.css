@@ -144,6 +144,7 @@ nav {
     align-items: center;
     background-color: darkslategray;
     padding: 15px;
+    font-size: 25px;
 }
 
 .logo {
@@ -152,11 +153,17 @@ nav {
 
 nav ul {
     display: flex;
+    
 }
 
 nav ul li {
     list-style: none;
     margin: 1px 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
 }
 
 nav ul li a:hover {
@@ -176,11 +183,15 @@ header {
 header h1 {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    margin: 20px;
 }
 
 header p {
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    margin: 10px;
 }
 
 .cta-btn {
@@ -188,7 +199,7 @@ header p {
     padding: 10px 20px;
     color: white;
     border: none;
-    font-size: 16px;
+    font-size: 25px;
 
     /* Change the cursor to pointer */
     cursor: pointer;
@@ -205,8 +216,19 @@ header p {
 }
 
 #about {
-    background-color: #eee;
+    background-color: lightgray;
     padding: 20px 30px;
+}
+
+#about h3{
+    font-size: 50px;
+    text-align: center;
+    margin: 50px;
+}
+
+#about p{
+    font-size: 40px;
+    text-align: center;
 }
 
 #about img {
@@ -224,12 +246,10 @@ header p {
     font-size: 20px;
 }
 
-#services * {
-    font-size: inherit;
-}
-
 .our-services {
     text-align: center;
+    padding: 30px;
+    font-size: 100px;
 }
 
 .services-container {
@@ -239,16 +259,13 @@ header p {
 }
 
 .services-box {
-    background-color: rgba(238, 238, 238, 0.75);
+    background-color: rgba(111, 111, 111, 0.5);
     text-align: center;
     gap: 20px;
     color: white;
     border: 1px solid rgba(255, 255, 255, 0.75);
-    padding: 15px;
-}
-
-.services-box * {
-    font-size: inherit;
+    padding: 30px 15px;
+    margin: 50px 10px;
 }
 
 footer {
@@ -256,4 +273,36 @@ footer {
     text-align: center;
     color: white;
     padding: 10px 20px;
+}
+
+/* Desktop first approch */
+
+/* Tablet first */
+@media(max-width:768px){
+    .services-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row: auto auto;
+        gap: 20px;
+    }
+
+    header h1 {
+        font-size: 50px;
+    }
+    
+    header p {
+        font-size: 25px;
+    }
+    
+}
+
+/* Mobile first */
+@media(max-width:576px){
+    header h1 {
+        font-size: 50px;
+    }
+    
+    header p {
+        font-size: 25px;
+    }
 }
